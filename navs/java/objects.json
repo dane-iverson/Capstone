@@ -1,0 +1,36 @@
+[{
+        "id": 1,
+        "image": "images/Porsche.jpg",
+        "name": "1970 Porsche 911 S 2.2",
+        "price": "588463.51",
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "image": "Images/Aston.jpg",
+        "name": "1958 Aston Martin DB4",
+        "price": "21285195.82",
+        "quantity": 1
+    },
+    {
+        "id": 3,
+        "image": "Images/Pantera.jpg",
+        "name": "1970 DeTomaso Pantera GTS",
+        "price": "2168376.30",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "image": "Images/Ferrari.jpg",
+        "name": "1980 Ferrari 308 GTS",
+        "price": "1303558.41",
+        "quantity": 1
+    },
+    {
+        "id": 5,
+        "image": "Images/Austin.jpg",
+        "name": "1964 Austin-Healey 3000",
+        "price": "1065500.65",
+        "quantity": 1
+    }
+]

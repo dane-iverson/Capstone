@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head id="home">
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, scale=1"> -->
+    <meta name="author" content="Dane Iverson">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styling/styles.css">
+
+    <!-- TITLE -->
+    <title>Home Page</title>
+</head>
+
+<!-- onload="load()" -->
+
+<body onload="load()">
+    <!-- Header -->
+    <div class="header" id="header">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="home.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <!-- Transparent image (I assume) to allow movement for the heading -->
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" /></svg>
+                <span class="fs-3">Iverson Classic</span>
+            </a>
+
+            <!-- Pills for moving around the webpage -->
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="home.html" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Meet the team</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Account</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Card Template copy/past incase i want to quickly add an item to the catalogue -->
+    <!--  <div class="card">
+        <img class="rounded-top" src="" alt="" id="">
+        <h1></h1>
+        <p class="price">R</p>
+        <details>
+            <summary>More Info</summary>
+            <p><b>Top Speed:</b><br>
+                <b>Engine:</b><br>
+                <b>Transmission:</b><br>
+                <b>Power:</b><br>
+                <b>Torque</b><br>
+                <b>Redline:</b><br>
+                <b>Driven Wheels:</b><br>
+                <b>0-60mph:</b><br>
+                <b>Quarter Mile:</b><br>
+            </p>
+        </details>
+        <a href="contact.html">
+            <p><button>Purchase</button></p>
+        </a>
+    </div> -->
+    <div class="content">
+        <!-- Car 1 -->
+        <div class="card">
+            <img class="rounded-top" src="images/Porsche.jpg" alt="Porsche 911" id="Porsche">
+            <h1 id="name1">1970 Porsche 911 S 2.2</h1>
+            <!--    -->
+            <label>R<p id="price1">588463</p></label>
+            <button class="button" onclick="addToCart(1)">Add to cart</button>
+            <!-- Details tag allows dropdown/expand menu -->
+            <!-- <details> -->
+            <a href="car pages/Porsche.html">
+                <p>More Info</p>
+            </a>
+            <!-- <p><b>Top Speed:</b> 144mph/231kmh<br>
+                    <b>Engine:</b> Flat-6 w/ Dry Sump Lubrication<br>
+                    <b>Transmission:</b> 5-speed manual<br>
+                    <b>Power:</b> 134.2kw/180bhp @ 6500rpm<br>
+                    <b>Torque:</b> 172.2nm/127ft lbs @ 5200rpm<br>
+                    <b>Redline:</b> 7400rpm<br>
+                    <b>Driven Wheels:</b>Rear Engine/RWD<br>
+                    <b>0-60mph:</b> 7.8 seconds<br>
+                    <b>Curb Weight:</b> 1084kg<br>
+                </p> -->
+            <!-- </details> -->
+            <!-- <a href="contact.html"> -->
+
+            <!-- </a> -->
+        </div>
+
+        <br>
+
+        <!-- Car 2 -->
+        <div class="card">
+            <img class="rounded-top" src="Images/Aston.jpg" alt="Aston Martin DB4" id="Aston">
+            <h1 id="name2">1958 Aston Martin DB4</h1>
+            <label>R<p id="price2">21285195</p></label>
+            <button class="button" onclick="addToCart(2)">Add to cart</button>
+            <!-- <details> -->
+            <a href="car pages/Aston.html">
+                <p>More Info</p>
+            </a>
+            <!-- <p><b>Top Speed:</b> 141mph/227kmh<br>
+                    <b>Engine:</b> Inline 6<br>
+                    <b>Transmission:</b> 4-speed manual<br>
+                    <b>Power:</b> 179kw/240bhp @ 5500rpm<br>
+                    <b>Torque:</b> 325.0nm/239ft lbs @ 4250rpm<br>
+                    <b>Redline:</b> 6000rpm<br>
+                    <b>Driven Wheels:</b> Rear Engine/RWD<br>
+                    <b>0-60mph:</b> 8.5 seconds<br>
+                    <b>Curb Weight:</b> 1308kg<br>
+                </p> -->
+            <!-- </details> -->
+            <!-- <a href="contact.html"> -->
+
+
+            <!-- </a> -->
+        </div>
+
+        <br>
+
+        <!-- CAR 3 -->
+        <div class="card">
+            <img class="rounded-top" src="Images/Pantera.jpg" alt="DeTomaso Pantera" id="Pantera">
+            <h1 id="name3">1970 DeTomaso Pantera GTS</h1>
+            <label>R<p id="price3">2168376</p></label>
+            <button class="button" onclick="addToCart(3)">Add to cart</button>
+            <a href="car pages/Pantera.html">
+                <p>More Info</p>
+            </a>
+            <!-- <details>
+                <summary>More Info</summary>
+                <p><b>Top Speed:</b>162mph/260kmh<br>
+                    <b>Engine:</b> Ford 5.8 Cleveland V8<br>
+                    <b>Transmission:</b> 5-speed manual<br>
+                    <b>Power:</b> 261kw/350bhp @ 6000rpm<br>
+                    <b>Torque:</b> 491.0nm/362ft lbs @ 6000rpm<br>
+                    <b>Redline:</b> 7500rpm<br>
+                    <b>Driven Wheels:</b> RWD<br>
+                    <b>0-60mph:</b> 5.5 seconds<br>
+                    <b>Curb Weight:</b> 1382kg<br>
+                </p>
+            </details> -->
+            <!-- create functionality to add to cart -->
+            <!-- <a href="contact.html"> -->
+
+            <!-- </a> -->
+        </div>
+
+        <br>
+
+        <!-- Car 4 -->
+        <div class="card">
+            <img class="rounded-top" src="Images/Ferrari.jpg" alt="Ferrari 308 GTS" id="Ferrari">
+            <h1 id="name4">1980 Ferrari 308 GTS</h1>
+            <label>R<p id="price4">1303558</p></label>
+            <button class="button" onclick="addToCart(4)">Add to cart</button>
+            <a href="car pages/Ferrari.html">
+                <p>More Info</p>
+            </a>
+            <!-- <details>
+                <summary>More Info</summary>
+                <p><b>Top Speed:</b> 157mph/253kmh<br>
+                    <b>Engine:</b> V8 2.9L<br>
+                    <b>Transmission:</b> 5-speed manual<br>
+                    <b>Power:</b> 252bhp @ 6600rpm<br>
+                    <b>Torque:</b> 209lb ft @ 5000rpm<br>
+                    <b>Redline:</b> 7700rpm<br>
+                    <b>Driven Wheels:</b> RWD<br>
+                    <b>0-60mph:</b> 6.7 seconds<br>
+                    <b>Curb Weight</b> 1250kg<br>
+                </p>
+            </details> -->
+            <!-- <a href="contact.html"> -->
+
+            <!-- </a> -->
+        </div>
+
+        <br>
+
+        <!-- Car 5 -->
+        <div class="card">
+            <img class="rounded-top" src="Images/Austin.jpg" alt="1964 Austin-Healey 3000" id="Austin">
+            <h1 id="name5">1964 Austin-Healey 3000</h1>
+            <label>R<p id="price5">1065500</p></label>
+            <button class="button" onclick="addToCart(5)">Add to cart</button>
+            <a href="car pages/Austin.html">
+                <p>More Info</p>
+            </a>
+            <!-- <details>
+                <summary>More Info</summary>
+                <p><b>Top Speed:</b> 121mph/195kmh<br>
+                    <b>Engine:</b> 2.9L C-Series I6<br>
+                    <b>Transmission:</b> 4-speed manual<br>
+                    <b>Power:</b> 110kw/148bhp @ 5250rpm<br>
+                    <b>Torque:</b> 224.0nm/165ft lbs @ 5250rpm<br>
+                    <b>Redline:</b> 6000rpm<br>
+                    <b>Driven Wheels:</b> RWD<br>
+                    <b>0-60mph:</b> 9.80seconds<br>
+                    <b>Curb Weight:</b> 1180kg<br>
+                </p>
+            </details> -->
+            <!-- <a href="contact.html"> -->
+
+            <!-- </a> -->
+        </div>
+
+        <br>
+
+
+    </div>
+
+    <script src="java/script.js"></script>
+</body>
+
+</html>
