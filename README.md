@@ -4,11 +4,12 @@ Capstone project from task 15 of level 1 at hyperiondev
 TOC
 ---------------------------------------------------------
 
-Line 14: Project Name
-Line 20: Description
-line 26: Installation
-Line 33: Usage
-Line 39: Credits
+Line 15: Project Name
+Line 21: Description
+line 27: Installation
+Line 34: Usage
+Line 40: Where to find on github
+Line 46: Credits
 
 ---------------------------------------------------------
 PROJECT NAME
@@ -34,6 +35,12 @@ USAGE
 ---------------------------------------------------------
 
 This project and its content has comments that explain the code being used, as for the interface, its very self explanatory and intuitive.
+
+---------------------------------------------------------
+WHERE TO FIND ON GITHUB
+---------------------------------------------------------
+
+You are currently reading this from the main branch. switch to master branch to see the capstone project.
 
 ---------------------------------------------------------
 CREDITS
